@@ -1,4 +1,4 @@
-export EDITOR=vim        # エディタをvimに設定
+export EDITOR=emacs        # エディタをvimに設定
 export LANG=ja_JP.UTF-8  # 文字コードをUTF-8に設定
 export KCODE=u           # KCODEにUTF-8を設定
 export AUTOFEATURE=true 
@@ -8,7 +8,6 @@ bindkey -e               # キーバインドをemacsモードに設定
 setopt no_beep           # ビープ音
 setopt auto_cd           # ディレクトリ名の入力のみで移動
 setopt auto_pushd        # cd時にディレクトリスタックにpushdする
-setopt correct           # コマンドのスペルを訂正する
 setopt magic_equal_subst # =以降も補完する(--prefix=/usrなど)
 setopt prompt_subst      # プロンプト定義内で変数置換やコマンド置換を扱う
 setopt notify            # バックグラウンドジョブの状態変化を即時報告
