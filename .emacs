@@ -9,8 +9,6 @@
 (partial-completion-mode 1)
 ;;; スクロールを一行ずつにする
 (setq scroll-step 1)
-;;; スクロールバーを右側に表示する
-(set-scroll-bar-mode 'right)
 ;;; モードラインに情報を表示
 (display-time)
 (line-number-mode 1)
