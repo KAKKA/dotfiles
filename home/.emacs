@@ -1,5 +1,3 @@
-(require 'ruby-mode)
-(defun ruby-mode-set-encoding () nil)
 
 ;;; バックアップファイルを作らない
 (setq backup-inhibited t)
