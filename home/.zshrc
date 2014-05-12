@@ -1,7 +1,7 @@
 export EDITOR=emacs        # エディタをvimに設定
 export LANG=ja_JP.UTF-8  # 文字コードをUTF-8に設定
 export KCODE=u           # KCODEにUTF-8を設定
-export AUTOFEATURE=true 
+export AUTOFEATURE=true
 
 bindkey -e               # キーバインドをemacsモードに設定
 
@@ -92,7 +92,12 @@ esac
 ### Aliases ###
 alias vi=vim
 
+
 ### rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+
+## mac用emacsパス
+PATH=/usr/local/Cellar/emacs/24.3/bin:$PATH
