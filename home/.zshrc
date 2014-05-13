@@ -101,3 +101,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 ## mac用emacsパス
 PATH=/usr/local/Cellar/emacs/24.3/bin:$PATH
+#export PATH=/usr/local/bin:$PATH
+export RBENV_ROOT=/usr/local/var/rbenv
