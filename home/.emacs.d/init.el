@@ -1,5 +1,3 @@
-(setq load-path (cons "~/.emacs.d/elisp/el-get/el-get/" load-path))
-
 ;;; バックアップファイルを作らない
 (setq backup-inhibited t)
 ;;; 補完時に大文字小文字を区別しない
@@ -38,22 +36,3 @@
 ;; 末尾の空白に色をつける
 (when (boundp 'show-trailing-whitespace)
   (setq-default show-trailing-whitespace t))
-
-
-(add-hook 'ruby-mode-hook
-          '(lambda ()
-             (robe-mode)
-             (robe-ac-setup)
-             (inf-ruby-keys)
-             ))
-
-(setq el-get-dir "~/.emacs.d/elisp/el-get/")
-
-(unless (require 'el-get nil 'noerror)
-  (with-current-buffer
-      (url-retrieve-synchronously
-       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
-    (goto-char (point-max))
-    (eval-print-last-sexp)))
-
-(el-get 'sync)
